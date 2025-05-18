@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+import { FIREBASE_API_KEY, FIREBASE_APP_ID, FIREBASE_AUTH_DOMAIN, FIREBASE_MEASUREMENT_ID, FIREBASE_MESSAGING_SENDER_ID, FIREBASE_PROJECT_ID, FIREBASE_STORAGE_BUCKET } from '@env';
 import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -7,13 +8,13 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDjTDI0P9lUdjxupRCmxGzEcwtvwKzm9e0",
-  authDomain: "finapp-c213f.firebaseapp.com",
-  projectId: "finapp-c213f",
-  storageBucket: "finapp-c213f.firebasestorage.app",
-  messagingSenderId: "664889832919",
-  appId: "1:664889832919:web:3739eac9a2a5329520c792",
-  measurementId: "G-XJFB9CDKYS"
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTH_DOMAIN,
+  projectId: FIREBASE_PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+  appId: FIREBASE_APP_ID,
+  measurementId: FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
